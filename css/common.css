@@ -1,0 +1,82 @@
+/* margin */
+.mt10{margin-top:10px;}
+.mt20{margin-top:20px;}
+.mt30{margin-top:30px;}
+
+.mb10{margin-bottom:10px;}
+.mb20{margin-bottom:20px;}
+.mb30{margin-bottom:30px;}
+/* padding */
+
+/* button type */
+.btnArea{display:block;width:100%;}
+.btnArea.type01{display:flex;justify-content:center;}
+.btnArea.type02{display:flex;justify-content:space-between;}
+
+.btnArea .btn{display:block;width:250px;height:50px;line-height:50px;font-size:18px;text-align:center;border:1px solid #000;border-radius:6px;box-sizing:border-box;}
+.btnArea .btn.type01{width:calc(50% - 10px);}
+.btnArea .btn.type02{width:100%;}
+.btnArea.type01 .btn + .btn{margin-left:20px;}
+.btnArea .bg{background:#000;color:#fff;}
+
+/* select css */
+.selectWrap .search{border:1px solid #ddd;border-radius:6px;display:block;width:100%;}
+.selectWrap .selectBox{position:relative;display:block;cursor:pointer;width:100%;}
+.selectWrap .selected{height:40px;overflow:hidden;position:relative;display:flex;align-items:center;font-size:14px;padding:10px;box-sizing:border-box;}
+.selectWrap .select{position:absolute;top:40px;left:-1px;width:100%;border:1px solid #ddd;border-radius:6px;overflow:hidden;background:#fff;display:none;font-size:14px;z-index:13;}
+.selectWrap .select.on{display:block;}
+.selectWrap .option{display:block;width:100%;line-height:40px;height:40px;padding:0 10px;box-sizing:border-box;}
+.selectWrap .option:hover{background:#ededed;}
+
+/* input text type */
+.inputForm{flex:1 auto;position:relative;}
+.inputForm input{width:100%;height:44px;border:none;background:#f2f2f2;color:#bfbfbf;border-radius:10px;padding:0 20px;}
+.inputForm span{text-indent:-9999px;position:absolute;right:0px;top:0px;width:44px;height:44px;cursor:pointer;}
+.inputForm.clear span:after{content:'';display:block;position:absolute;right:10px;top:10px;width:22px;height:22px;background:url(../img/ico_input_cancel.png) no-repeat;background-size:100% 100%;}
+.inputForm button{width:130px;height:44px;border:none;background:#000;color:#fff;border-radius:10px;margin-left:10px;}
+.inputForm.type02 input{background:#fff;border:1px solid #f2f2f2;}
+.inputForm.btn{display:flex;}
+.inputForm.btn input{flex:1 auto;width:auto;}
+
+
+/* input radio type */
+.radioBox{display:flex;justify-content:space-between;}
+.radio.type01{flex:1 auto;text-align:center;font-size:14px;}
+.radio.type01 input[type="radio"]{position:absolute;left:-9999px;}
+.radio.type01 input[type="radio"] + span{position:relative;padding-left:20px;}
+.radio.type01 input[type="radio"] + span:before{content:'';display:inline-block;position:absolute;left:0;top:2px;width:13px;height:13px;border-radius:50%;border:1px solid #000;}
+.radio.type01 input[type="radio"]:checked + span:after{content:'';display:inline-block;position:absolute;left:3px;top:5px;width:9px;height:9px;border-radius:50%;background:#000;}
+
+.radio.type02{flex:0 0 calc(50% - 10px);width:calc(50% - 10px);cursor:pointer;}
+.radio.type02 input{position:absolute;left:-9999px;}
+.radio.type02 input[type="radio"] + span{width:100%;box-sizing:border-box;border:1px solid #000;border-radius:6px;display:flex;height:30px;align-items:center;justify-content:center;}
+.radio.type02 input[type="radio"]:checked + span{background:#000;color:#fff;border-color:#999;}
+
+/* input checkbox type */
+.checkbox input[type="checkbox"]{position:absolute;left:-9999px;}
+.checkbox input[type="checkbox"] + span:before{content:'';display:block;border:1px solid #000;width:18px;height:18px;border-radius:5px;margin-right:5px;}
+.checkbox input[type="checkbox"]:checked + span:before{background:#000;}
+.checkbox input[type="checkbox"]:checked + span:after{content:'';position:absolute;color:#fff;width:17px;height:17px;background:url(../img/ico_checkbox.svg) no-repeat;}
+
+/* datepicker css */
+.ui-datepicker-trigger{text-indent:-9999px;width:20px;height:20px;background:url(../img/ico_calendar_btn.png) no-repeat;background-size:100% 100%;margin-left:10px;}
+.ui-datepicker .ui-datepicker-header{padding:0;}
+.ui-widget-header{border:none;background:none;}
+.ui-datepicker .ui-datepicker-title{font-size:20px;}
+.ui-state-default, .ui-widget-content .ui-state-default{border:none;background:none;color:#000;text-align:center;}
+.ui-datepicker td a{padding:10px 5px;}
+.ui-state-highlight, .ui-widget-content .ui-state-highlight, .ui-widget-header .ui-state-highlight{background:#fff;border:#fff;}
+.ui-corner-all{cursor:pointer;}
+.ui-datepicker-next{top:4px!important;background:url(../img/aftericon.png) no-repeat;}
+.ui-datepicker-next-hover{top:4px!important;}
+.ui-datepicker-prev{transform:rotate(180deg);top:4px!important;background:url(../img/aftericon.png) no-repeat;}
+.ui-datepicker-prev-hover{top:4px!important;}
+
+/* address popup style */
+div.postcodify_popup_layer div.postcodify_controls{background:#000!important;}
+div.postcodify_popup_layer button.search_button{background:#000!important;}
+div.postcodify_popup_layer button.search_button:hover{background:#fff!important;color:#000!important;}
+div.postcodify_popup_layer button.close_button{background:#000!important;}
+div.postcodify_popup_layer button.close_button:hover{background:#fff!important;color:#000!important;}
+div.postcodify_popup_layer div.postcodify_help p{color:#000!important;font-weight:bold;}
+div.postcodify_popup_layer div.postcodify_logo{display:none;}
